@@ -7,7 +7,25 @@
 //     $("h1").toggleClass("style1")
 // })
 
-$(".mybutton").click(function(){
-    var value =this.innerHTML;
-    $("h1").text(value + "is clicked")
+// $(".mybutton").click(function(){
+//     var value =this.innerHTML;
+//     $("h1").text(value + "is clicked")
+// })
+
+$("#loginButton").click(function()
+{
+   let password1 =$("#pass1").val();
+   let password2 =$("#pass2").val();
+
+   if(password1 !="" && password2 !="")
+   {
+        if(password1 == password2){
+            alert("Successfully Loged")
+        }else{
+            alert("password mismatch")
+        }
+
+   }else{
+    alert("Please Enter Password")
+   }
 })
